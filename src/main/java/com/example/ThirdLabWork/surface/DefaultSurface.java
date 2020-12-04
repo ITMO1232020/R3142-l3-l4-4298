@@ -4,7 +4,8 @@ import java.util.Objects;
 
 public class DefaultSurface implements Surface {
 
-    protected SurfaceColor color;
+    private SurfaceColor color;
+    private String description;
 
     @Override
     public void illuminate() {
@@ -17,6 +18,16 @@ public class DefaultSurface implements Surface {
 
     public void setColor(SurfaceColor color) {
         this.color = color;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

@@ -3,7 +3,7 @@ package com.example.ThirdLabWork;
 
 import com.example.ThirdLabWork.config.Executor;
 import com.example.ThirdLabWork.config.SkyModeBuilderSet;
-import com.example.ThirdLabWork.viewer.Viewer;
+import com.example.ThirdLabWork.config.Viewer;
 
 import java.util.ArrayList;
 import java.util.List;

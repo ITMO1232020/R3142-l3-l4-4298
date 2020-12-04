@@ -38,6 +38,7 @@ public class SurfaceColorBuilder {
 
     public SurfaceColorBuilder() {
         surface = new DefaultSurface();
+        surface.setDescription("Сверху виднеется");
     }
 
     public SurfaceColorBuilder setSun() {

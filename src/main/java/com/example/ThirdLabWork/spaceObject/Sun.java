@@ -12,6 +12,7 @@ public class Sun extends BaseDecorator {
     @Override
     public void illuminate() {
         surface.illuminate();
-        surface.setColor(SurfaceColor.LIGHT);
+        setColor(SurfaceColor.LIGHT);
+        setDescription(surface.getDescription() + ", Солнце");
     }
 }

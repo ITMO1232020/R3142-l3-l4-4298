@@ -1,7 +1,5 @@
 package com.example.ThirdLabWork.config;
 
-import com.example.ThirdLabWork.viewer.Viewer;
-
 import java.util.List;
 
 public class Executor {

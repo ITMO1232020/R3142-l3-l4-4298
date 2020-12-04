@@ -9,6 +9,7 @@ public abstract class BaseDecorator implements Surface {
 
     protected String name;
     protected Surface surface;
+    protected String description;
 
 
     @Override
@@ -24,6 +25,16 @@ public abstract class BaseDecorator implements Surface {
     @Override
     public void setColor(SurfaceColor color) {
         surface.setColor(color);
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

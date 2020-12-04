@@ -15,9 +15,10 @@ public class FullMoon extends BaseDecorator {
     public void illuminate() {
         surface.illuminate();
         if(getColor() == SurfaceColor.LIGHT) {
-            surface.setColor(SurfaceColor.MOON_ECLIPSE_COLOR);
+            setColor(SurfaceColor.MOON_ECLIPSE_COLOR);
         } else {
-            surface.setColor(SurfaceColor.REFLECTED_LIGHT);
+            setColor(SurfaceColor.REFLECTED_LIGHT);
         }
+        setDescription(surface.getDescription() + ", полная Луна");
     }
 }

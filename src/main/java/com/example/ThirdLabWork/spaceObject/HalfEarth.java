@@ -13,6 +13,7 @@ public class HalfEarth extends BaseDecorator {
     @Override
     public void illuminate() {
         surface.illuminate();
-        surface.setColor(SurfaceColor.PURPLE);
+        setColor(SurfaceColor.PURPLE);
+        setDescription(surface.getDescription() + ", Земля в виде месяца");
     }
 }

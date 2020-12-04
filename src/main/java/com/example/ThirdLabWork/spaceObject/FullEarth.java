@@ -14,9 +14,10 @@ public class FullEarth extends BaseDecorator {
     public void illuminate() {
         surface.illuminate();
         if(getColor() == SurfaceColor.LIGHT) {
-            surface.setColor(SurfaceColor.ECLIPSE_COLOR);
+            setColor(SurfaceColor.ECLIPSE_COLOR);
         } else {
-            surface.setColor(SurfaceColor.REFLECTED_LIGHT);
+            setColor(SurfaceColor.REFLECTED_LIGHT);
         }
+        setDescription(surface.getDescription() + ", полная Земля");
     }
 }
