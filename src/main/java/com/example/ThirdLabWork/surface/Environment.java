@@ -1,11 +1,11 @@
 package com.example.ThirdLabWork.surface;
 
 
-public interface Surface {
+public interface Environment {
     void illuminate();
 
-    SurfaceColor getColor();
-    void setColor(SurfaceColor color);
+    EnvironmentColor getColor();
+    void setColor(EnvironmentColor color);
 
     String getDescription();
     void setDescription(String description);

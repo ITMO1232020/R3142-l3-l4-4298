@@ -1,30 +1,29 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Surface;
-import com.example.ThirdLabWork.surface.SurfaceColor;
+import com.example.ThirdLabWork.surface.Environment;
+import com.example.ThirdLabWork.surface.EnvironmentColor;
 
 import java.util.Objects;
 
-public abstract class BaseDecorator implements Surface {
+public abstract class BaseDecorator implements Environment {
 
     protected String name;
-    protected Surface surface;
+    protected Environment environment;
     protected String description;
 
 
     @Override
     public void illuminate() {
-        // do nothing
     }
 
     @Override
-    public SurfaceColor getColor() {
-        return surface.getColor();
+    public EnvironmentColor getColor() {
+        return environment.getColor();
     }
 
     @Override
-    public void setColor(SurfaceColor color) {
-        surface.setColor(color);
+    public void setColor(EnvironmentColor color) {
+        environment.setColor(color);
     }
 
     @Override
@@ -43,16 +42,16 @@ public abstract class BaseDecorator implements Surface {
         if (o == null || getClass() != o.getClass()) return false;
         BaseDecorator that = (BaseDecorator) o;
         return name.equals(that.name) &&
-                surface.equals(that.surface);
+                environment.equals(that.environment);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, surface);
+        return Objects.hash(name, environment);
     }
 
     @Override
     public String toString() {
-        return name + ": " + surface.getColor();
+        return name + ": " + environment.getColor();
     }
 }

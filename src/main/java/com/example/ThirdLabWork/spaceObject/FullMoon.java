@@ -1,24 +1,24 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Surface;
-import com.example.ThirdLabWork.surface.SurfaceColor;
+import com.example.ThirdLabWork.surface.Environment;
+import com.example.ThirdLabWork.surface.EnvironmentColor;
 
 public class FullMoon extends BaseDecorator {
 
 
-    public FullMoon(Surface surface) {
-        this.surface = surface;
+    public FullMoon(Environment surface) {
+        this.environment = surface;
         name = "Full Moon";
     }
 
     @Override
     public void illuminate() {
-        surface.illuminate();
-        if(getColor() == SurfaceColor.LIGHT) {
-            setColor(SurfaceColor.MOON_ECLIPSE_COLOR);
+        environment.illuminate();
+        if(getColor() == EnvironmentColor.LIGHT) {
+            setColor(EnvironmentColor.MOON_ECLIPSE_COLOR);
         } else {
-            setColor(SurfaceColor.REFLECTED_LIGHT);
+            setColor(EnvironmentColor.REFLECTED_LIGHT);
         }
-        setDescription(surface.getDescription() + ", полная блестящая Луна");
+        setDescription(environment.getDescription() + ", полная блестящая Луна");
     }
 }

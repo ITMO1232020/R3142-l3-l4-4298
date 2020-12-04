@@ -1,19 +1,19 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Surface;
-import com.example.ThirdLabWork.surface.SurfaceColor;
+import com.example.ThirdLabWork.surface.Environment;
+import com.example.ThirdLabWork.surface.EnvironmentColor;
 
 public class HalfMoon extends BaseDecorator {
 
-    public HalfMoon(Surface surface) {
-        this.surface = surface;
+    public HalfMoon(Environment surface) {
+        this.environment = surface;
         name = "Half Moon";
     }
 
     @Override
     public void illuminate() {
-        surface.illuminate();
-        setColor(SurfaceColor.REFLECTED_LIGHT);
-        setDescription(surface.getDescription() + ", белая Луна в виде месяца");
+        environment.illuminate();
+        setColor(EnvironmentColor.REFLECTED_LIGHT);
+        setDescription(environment.getDescription() + ", белая Луна в виде месяца");
     }
 }

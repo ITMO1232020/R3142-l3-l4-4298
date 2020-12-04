@@ -1,23 +1,23 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Surface;
-import com.example.ThirdLabWork.surface.SurfaceColor;
+import com.example.ThirdLabWork.surface.Environment;
+import com.example.ThirdLabWork.surface.EnvironmentColor;
 
 public class FullEarth extends BaseDecorator {
 
-    public FullEarth(Surface surface) {
-        this.surface = surface;
+    public FullEarth(Environment surface) {
+        this.environment = surface;
         name = "Full Earth";
     }
 
     @Override
     public void illuminate() {
-        surface.illuminate();
-        if(getColor() == SurfaceColor.LIGHT) {
-            setColor(SurfaceColor.ECLIPSE_COLOR);
+        environment.illuminate();
+        if(getColor() == EnvironmentColor.LIGHT) {
+            setColor(EnvironmentColor.ECLIPSE_COLOR);
         } else {
-            setColor(SurfaceColor.REFLECTED_LIGHT);
+            setColor(EnvironmentColor.REFLECTED_LIGHT);
         }
-        setDescription(surface.getDescription() + ", полная сине-голубая Земля");
+        setDescription(environment.getDescription() + ", полная сине-голубая Земля");
     }
 }

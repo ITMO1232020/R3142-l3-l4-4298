@@ -2,21 +2,21 @@ package com.example.ThirdLabWork.surface;
 
 import java.util.Objects;
 
-public class DefaultSurface implements Surface {
+public class DefaultEnvironment implements Environment {
 
-    private SurfaceColor color;
+    private EnvironmentColor color;
     private String description;
 
     @Override
     public void illuminate() {
-        setColor(SurfaceColor.DARK);
+        setColor(EnvironmentColor.DARK);
     }
 
-    public SurfaceColor getColor() {
+    public EnvironmentColor getColor() {
         return color;
     }
 
-    public void setColor(SurfaceColor color) {
+    public void setColor(EnvironmentColor color) {
         this.color = color;
     }
 
@@ -34,7 +34,7 @@ public class DefaultSurface implements Surface {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        DefaultSurface that = (DefaultSurface) o;
+        DefaultEnvironment that = (DefaultEnvironment) o;
         return color == that.color;
     }
 
@@ -45,6 +45,6 @@ public class DefaultSurface implements Surface {
 
     @Override
     public String toString() {
-        return "Default Surface: " + color;
+        return "Черное небо: " + color;
     }
 }
