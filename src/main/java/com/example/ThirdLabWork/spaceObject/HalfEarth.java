@@ -1,8 +1,5 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Environment;
-import com.example.ThirdLabWork.surface.EnvironmentColor;
-
 public class HalfEarth extends BaseDecorator {
 
     public HalfEarth(Environment surface) {
@@ -14,6 +11,6 @@ public class HalfEarth extends BaseDecorator {
     public void illuminate() {
         environment.illuminate();
         setColor(EnvironmentColor.PURPLE);
-        setDescription(environment.getDescription() + ", Земля в виде сине-голубого месяца");
+        setDescription(environment.getDescription() + ", Земля в виде сине-голубого месяца. " + EnvironmentColor.OBLIQUE_LIGHT);
     }
 }

@@ -13,7 +13,8 @@ public class Main {
 
 		astronauts.add(new Astronaut("Незнайка", SkyMode.MoonEclipse));
 		astronauts.add(new Astronaut("Спутник 1", SkyMode.MoonDay));
-		astronauts.add(new Astronaut("Спутник 2", SkyMode.MoonNight));
+		astronauts.add(new Astronaut("Спутник 2", SkyMode.MoonNightDirectLight));
+		astronauts.add(new Astronaut("Спутник 2", SkyMode.MoonNightObliqueLight));
 		astronauts.add(new Astronaut("Спутник 3", SkyMode.Space));
 		astronauts.add(new Astronaut("Спутник 4", SkyMode.Space));
 		astronauts.add(new Astronaut("Спутник 5", SkyMode.Space));

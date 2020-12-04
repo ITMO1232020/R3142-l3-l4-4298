@@ -1,9 +1,9 @@
 package com.example.ThirdLabWork.config;
 
 import com.example.ThirdLabWork.spaceObject.*;
-import com.example.ThirdLabWork.surface.DefaultEnvironment;
-import com.example.ThirdLabWork.surface.Environment;
-import com.example.ThirdLabWork.surface.EnvironmentColor;
+import com.example.ThirdLabWork.spaceObject.DefaultEnvironment;
+import com.example.ThirdLabWork.spaceObject.Environment;
+import com.example.ThirdLabWork.spaceObject.EnvironmentColor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +29,9 @@ public class SurfaceBuilder {
         builders.add(new SurfaceBuilder()
                 .setStar()
                 .setOpenSpace());
+
+        builders.add(new SurfaceBuilder()
+                .setFullEarth());
 
         builders.add(new SurfaceBuilder()
                 .setSun()
@@ -90,12 +93,14 @@ public class SurfaceBuilder {
         switch (skyMode) {
             case MoonEclipse:
                 return builders.get(0);
-            case MoonNight:
+            case MoonNightDirectLight:
                 return builders.get(1);
-            case Space:
+            case MoonNightObliqueLight:
                 return builders.get(2);
+            case Space:
+                return builders.get(3);
         }
-        return builders.get(3);
+        return builders.get(4);
     }
 
     @Override

@@ -1,7 +1,5 @@
 package com.example.ThirdLabWork.config;
 
-import com.example.ThirdLabWork.space.Rocket;
-import com.example.ThirdLabWork.space.Space;
 import com.example.ThirdLabWork.viewer.Astronaut;
 
 import java.util.List;

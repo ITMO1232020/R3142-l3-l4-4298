@@ -1,8 +1,5 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Environment;
-import com.example.ThirdLabWork.surface.EnvironmentColor;
-
 public class HalfMoon extends BaseDecorator {
 
     public HalfMoon(Environment surface) {

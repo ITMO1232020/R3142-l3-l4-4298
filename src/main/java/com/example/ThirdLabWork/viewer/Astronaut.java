@@ -2,7 +2,7 @@ package com.example.ThirdLabWork.viewer;
 
 import com.example.ThirdLabWork.config.SkyMode;
 import com.example.ThirdLabWork.config.SurfaceBuilder;
-import com.example.ThirdLabWork.surface.Environment;
+import com.example.ThirdLabWork.spaceObject.Environment;
 
 import java.util.Objects;
 

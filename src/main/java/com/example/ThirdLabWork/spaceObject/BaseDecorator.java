@@ -1,8 +1,5 @@
 package com.example.ThirdLabWork.spaceObject;
 
-import com.example.ThirdLabWork.surface.Environment;
-import com.example.ThirdLabWork.surface.EnvironmentColor;
-
 import java.util.Objects;
 
 public abstract class BaseDecorator implements Environment {
