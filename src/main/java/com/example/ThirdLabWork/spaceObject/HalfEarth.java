@@ -14,6 +14,6 @@ public class HalfEarth extends BaseDecorator {
     public void illuminate() {
         surface.illuminate();
         setColor(SurfaceColor.PURPLE);
-        setDescription(surface.getDescription() + ", Земля в виде месяца");
+        setDescription(surface.getDescription() + ", Земля в виде сине-голубого месяца");
     }
 }

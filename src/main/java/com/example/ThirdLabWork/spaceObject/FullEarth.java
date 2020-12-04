@@ -18,6 +18,6 @@ public class FullEarth extends BaseDecorator {
         } else {
             setColor(SurfaceColor.REFLECTED_LIGHT);
         }
-        setDescription(surface.getDescription() + ", полная Земля");
+        setDescription(surface.getDescription() + ", полная сине-голубая Земля");
     }
 }

@@ -19,6 +19,6 @@ public class FullMoon extends BaseDecorator {
         } else {
             setColor(SurfaceColor.REFLECTED_LIGHT);
         }
-        setDescription(surface.getDescription() + ", полная Луна");
+        setDescription(surface.getDescription() + ", полная блестящая Луна");
     }
 }

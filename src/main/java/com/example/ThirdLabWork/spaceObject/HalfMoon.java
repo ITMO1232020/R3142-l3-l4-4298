@@ -14,6 +14,6 @@ public class HalfMoon extends BaseDecorator {
     public void illuminate() {
         surface.illuminate();
         setColor(SurfaceColor.REFLECTED_LIGHT);
-        setDescription(surface.getDescription() + ", Луна в виде месяца");
+        setDescription(surface.getDescription() + ", белая Луна в виде месяца");
     }
 }
