@@ -82,7 +82,7 @@ public class Astronaut {
                 "%s",
                 name,condition,isLeader,suit,skyMode,environment.getColor(),
                 environment.getDescription().replaceFirst(",", ":"), addedResult)
-                .toString() + "\nАстронафт включил прибор невесомости. Слышно жужжание\n";
+                .toString() + "\nАстронавт включил прибор невесомости. Слышно жужжание\n";
     }
 
     // Пример вложенного класса

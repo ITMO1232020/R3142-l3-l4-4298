@@ -1,7 +1,7 @@
 package com.example.fourthlab.environment;
 
 public enum  AirCondition {
-    FULL_OF_SPACE_RAYS("Из-за солнечных лучей обстановка опасна для космонафта"),
+    FULL_OF_SPACE_RAYS("Из-за солнечных лучей обстановка опасна для космонавта"),
     THIN_AIR("Жизни космонафта ничего не угрожает");
 
     private String description;

@@ -4,19 +4,19 @@ import com.example.fourthlab.environment.AirCondition;
 
 public enum SkyMode {
     MoonDay(
-            "Космонафт стоит на луне. Поверхность покрыта трещинками. Светит солнце.",
+            "Космонавт стоит на луне. Поверхность покрыта трещинками. Светит солнце.",
             AirCondition.FULL_OF_SPACE_RAYS),
     MoonNightObliqueLight(
-            "Космонафт стоит на луне. Поверхность покрыта трещинками. Ночь.",
+            "Космонавт стоит на луне. Поверхность покрыта трещинками. Ночь.",
             AirCondition.THIN_AIR),
     MoonNightDirectLight(
-            "Космонафт стоит на луне. Поверхность покрыта трещинками. Ночь.",
+            "Космонавт стоит на луне. Поверхность покрыта трещинками. Ночь.",
             AirCondition.THIN_AIR),
     MoonEclipse(
-            "Космонафт стоит на луне. Поверхность покрыта трещинками. Затмение",
+            "Космонавт стоит на луне. Поверхность покрыта трещинками. Затмение",
             AirCondition.FULL_OF_SPACE_RAYS),
     Space(
-            "Космонафт находится в открытом космосе",
+            "Космонавт находится в открытом космосе",
             AirCondition.FULL_OF_SPACE_RAYS);
 
     private String description;

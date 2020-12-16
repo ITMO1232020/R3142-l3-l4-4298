@@ -47,6 +47,6 @@ public class SpaceSuit {
 
     @Override
     public String toString() {
-        return "На костюме подвешаны: " + tools.toString().substring(1, tools.toString().length()-1);
+        return "На костюме подвешены: " + tools.toString().substring(1, tools.toString().length()-1);
     }
 }
